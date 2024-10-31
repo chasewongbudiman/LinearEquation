@@ -16,15 +16,19 @@ public class LinearEquation {
 
 
     private double yIntercept(){
-
+        double slope = slope();
+        double yIntercept = (y1- (x1-slope));
+        return round(yIntercept);
 
     }
     private double distance() {
-
+        double d = Math.sqrt(Math.pow(x2-x1, 2)) + Math.pow(y2 - y1, 2)));
+    return rounded(slope);
 
     }
     private double slope (){
-
+        double s = (y2-y1)/(x2-x1);
+        return rounded(slope);
 
     }
     private String equation(){
@@ -32,5 +36,8 @@ public class LinearEquation {
 
     }
 
-
+        private coordinate
+    private double round (double toRound) {
+        return Math.round(toRound * 100) / 100.0;
+    }
 }
